@@ -62,5 +62,19 @@ my_list = [1,2,4,5,6]
 print(is_palindrome(my_list))
 print(is_palindrome([1,2,3,2,1]))
 
-###
+### Rotating the list to the list by D position(left)
+def rotate_list_position(arr, d):
+    d = d % len(arr)
+    return arr[d:] + arr[:d] 
+print(rotate_list_position([10,20,30,40,50], 2))
+###Rotating the list to the list by D position(right)
+def rotate_list_position2(arr, d):
+    d = d % len(arr)
+    return arr[-d:] + arr[:-d]
+arr = [10, 20, 30, 40, 50]
+d = 2
+arr1 = [10, 20, 30, 40, 50]
+d = 2
+print(rotate_list_position2(arr1, 2))   
+    
 
