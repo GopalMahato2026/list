@@ -62,3 +62,5 @@ my_list = [1,2,4,5,6]
 print(is_palindrome(my_list))
 print(is_palindrome([1,2,3,2,1]))
 
+###
+
