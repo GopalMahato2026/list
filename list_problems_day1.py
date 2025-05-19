@@ -77,4 +77,14 @@ arr1 = [10, 20, 30, 40, 50]
 d = 2
 print(rotate_list_position2(arr1, 2))   
     
-
+######### if string contains vowels then replaceing that to *
+def find_vowel(s):
+    vowels = ["a","e","i","o","u"]
+    new_s = ""
+    for char in s:
+        if char.lower() in vowels:
+            new_s += "*"
+        else:
+            new_s += char    
+    return new_s
+print(find_vowel("Gopal"))
